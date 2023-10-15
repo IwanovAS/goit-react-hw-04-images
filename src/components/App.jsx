@@ -36,11 +36,11 @@ export function App() {
         });
       }
     };
-     if (pageNr > 1 || currentSearch) {
+    if (pageNr > 1 || currentSearch) {
       fetchImagesAndSetState();
-     }
+    }
   }, [pageNr, currentSearch]);
-    
+
   const handleSearch = query => {
     setCurrentSearch(query);
     setImages([]);
